@@ -10,5 +10,4 @@ class ChatbotController(private val chatbotService: ChatbotService) {
 
     @PostMapping("/question")
     fun askQuestion(@RequestBody question: String): String = chatbotService.answer(question)
-
 }

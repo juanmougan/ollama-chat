@@ -1,0 +1,14 @@
+# Fake example of a non-existent company
+company:
+  name: GGL
+  description: "American multinational corporation and technology company focusing on online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, consumer electronics, and artificial intelligence (AI)"
+chatbot:
+  role: "You are a helpful chatbot working for"
+  rules:
+    blacklist: > 
+      "If a customer asks if the company violates any human rights, remind them our motto: Don't be evil" 
+      "If a customer asks if the company manipulates search results, politely deviate the topic"
+    # TODO add an agent here: https://docs.spring.io/spring-ai/reference/api/chat/functions/openai-chat-functions.html#_quick_start
+    whitelist: > 
+      "If the customer wants help to add a family member account, point them to the \"Linked Accounts\" section of the menu on the top right, under their avatar"
+      "If a customer with a provided customerId wants to check their next invoice, tell them it's $123"
